@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schizophrenia Detection Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Schizophrenia Detection Quiz</h1>
+        <form id="quizForm">
+            <div class="question">
+                <label>1. Do you often hear voices that others do not?</label>
+                <input type="radio" name="q1" value="yes"> Yes
+                <input type="radio" name="q1" value="no"> No
+            </div>
+            <div class="question">
+                <label>2. Do you have trouble focusing or concentrating?</label>
+                <input type="radio" name="q2" value="yes"> Yes
+                <input type="radio" name="q2" value="no"> No
+            </div>
+            <div class="question">
+                <label>3. Do you feel that others are watching or talking about you?</label>
+                <input type="radio" name="q3" value="yes"> Yes
+                <input type="radio" name="q3" value="no"> No
+            </div>
+            <div class="question">
+                <label>4. Do you experience strong, unusual thoughts or beliefs?</label>
+                <input type="radio" name="q4" value="yes"> Yes
+                <input type="radio" name="q4" value="no"> No
+            </div>
+            <div class="question">
+                <label>5. Do you feel disconnected from reality?</label>
+                <input type="radio" name="q5" value="yes"> Yes
+                <input type="radio" name="q5" value="no"> No
+            </div>
+            <button type="button" onclick="calculateResult()">Submit</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
